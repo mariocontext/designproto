@@ -1,0 +1,11 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+/* needs to be here to override or add to bulma core styles */
+@import 'bulma-fixes.scss';
+@import 'my-custom-vars.scss';
+
+@import '~bulma';
+
+/* your special global styling */
+@import 'my-custom-styling.scss';

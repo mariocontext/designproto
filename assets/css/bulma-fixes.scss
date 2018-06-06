@@ -1,0 +1,122 @@
+// bulma override because CSS vars are not being properly compilled by post-css webpack
+
+$variable-columns: false;
+
+// gap fix for Bulma
+
+.columns.is-variable {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.columns.is-variable .column {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.columns.is-variable.is-0 {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+.columns.is-variable.is-0 .column {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.columns.is-variable.is-1 {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+
+.columns.is-variable.is-1 .column {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.columns.is-variable.is-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.columns.is-variable.is-2 .column {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.columns.is-variable.is-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.columns.is-variable.is-3 .column {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.columns.is-variable.is-4 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.columns.is-variable.is-4 .column {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.columns.is-variable.is-5 {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
+.columns.is-variable.is-5 .column {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.columns.is-variable.is-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.columns.is-variable.is-6 .column {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.columns.is-variable.is-7 {
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+}
+
+.columns.is-variable.is-7 .column {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.columns.is-variable.is-8 {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+.columns.is-variable.is-8 .column {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+// icon sizing because the npm install of font awesome uses fas. JS version produces vector. TODO: install and mess around with that implementation instead.
+
+.icon.is-small {
+    font-size: 1em;
+    margin: .5rem;
+}
+
+.icon.is-medium {
+    font-size: 2em;
+    margin: .5rem;
+}
+
+.icon.is-large {
+    font-size: 3em;
+    margin: .75rem;
+}

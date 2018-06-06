@@ -1,0 +1,93 @@
+/* Custom Styling for global elements */
+
+/* TYPOGRPAHY */
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    color: #444;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 3.2rem;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 3.2rem;
+    margin-bottom: .5rem;
+}
+
+h4 {
+    margin-top: 2.2rem;
+    font-weight: 700;
+    font-size: .85rem;
+}
+
+h5 {
+    margin-top: 1.2rem;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+h6 {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: .5rem;
+}
+
+.main-content {
+    a {
+
+        text-decoration: underline dashed;
+        -webkit-text-underline-position: under;
+        -ms-text-underline-position: below;
+        text-underline-position: under;
+        &:hover {
+            text-decoration: underline solid;
+        }
+    }
+    ul {
+        margin-top: .5rem
+    }
+    li {
+        margin-bottom: .75rem;
+    }
+}
+
+.container.is-fluid {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.main-content {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.main-content .section {
+    padding: 2rem 1.5rem;
+}
+
+.box {
+    background-color: #DDD;
+}
+
+section.box h2 {
+    margin-top: 1rem;
+}
