@@ -1,16 +1,15 @@
 <template>
 
   <footer class="footer app-footer" role="contentinfo">
-
-    <b-tabs type="is-toggle" size="is-medium" expanded>
-        <b-tab-item label="Pictures" icon="google-photos"></b-tab-item>
-        <b-tab-item label="Music" icon="library-music"></b-tab-item>
-        <b-tab-item label="Videos" icon="video"></b-tab-item>
-    </b-tabs>
+    <div class="app-bottom-nav">
+      <b-tabs type="is-toggle" size="is-medium" expanded>
+          <b-tab-item label="Pictures" icon="google-photos"></b-tab-item>
+          <b-tab-item label="Music" icon="library-music"></b-tab-item>
+          <b-tab-item label="Videos" icon="video"></b-tab-item>
+      </b-tabs>
+    </div>
 
   </footer>
-
-  
 
 </template>
 
@@ -33,10 +32,21 @@
 }
 
 .app-footer {
+
+  @media screen and (min-width: 1088px) {
+    .app-bottom-nav {
+      display: none;
+    }
+  }
   
   .tabs a {
   flex-direction: column;
   font-size: 1rem;
+  transition: all 0.5s ease;
+    &:hover {
+      color: #DDD;
+      background-color: #333;
+    }
     .icon:first-child {
       margin-right: 0;
     }
