@@ -1,12 +1,33 @@
 <template>
 
   <footer class="footer app-footer" role="contentinfo">
-    <div class="app-bottom-nav">
-      <b-tabs type="is-toggle" size="is-medium" expanded>
-          <b-tab-item label="Pictures" icon="google-photos"></b-tab-item>
-          <b-tab-item label="Music" icon="library-music"></b-tab-item>
-          <b-tab-item label="Videos" icon="video"></b-tab-item>
-      </b-tabs>
+
+    <div class="app-bottom-nav buttons has-addons">
+
+      <router-link class="button is-large" to="services">
+        <b-icon
+                icon="home"
+                size="is-medium">
+        </b-icon>
+        <span class="app-bottom-nav-label">Services</span>
+        </router-link>
+
+      <router-link class="button is-large" to="faq">
+        <b-icon
+                icon="home"
+                size="is-medium">
+        </b-icon>
+        <span class="app-bottom-nav-label">FAQ</span>
+      </router-link>
+
+      <router-link class="button is-large" to="about">
+        <b-icon
+                icon="home"
+                size="is-medium">
+        </b-icon>
+        <span class="app-bottom-nav-label">About</span>
+      </router-link>
+      
     </div>
 
   </footer>
@@ -22,6 +43,7 @@
 
 
 <style lang="scss">
+/* TODO: understand why these styles can't be scoped */
 
 .footer {
   margin: 0;
@@ -31,15 +53,34 @@
   width: 100%;
 }
 
-.app-footer {
+.app-bottom-nav {
+
+  justify-content: space-between;
+
+  a {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    .icon {
+      /* TODO: need to find a better way than using !important */
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
 
   @media screen and (min-width: 1088px) {
     .app-bottom-nav {
       display: none;
     }
   }
+
+  .app-bottom-nav-label {
+    font-size: 1rem;
+  }
   
-  .tabs a {
+  /*
+  .nav-footer a {
   flex-direction: column;
   font-size: 1rem;
   transition: all 0.5s ease;
@@ -51,14 +92,8 @@
       margin-right: 0;
     }
   }
+  */
 
-  .tab-content {
-    padding: 0;
-  }
-
-  .tabs:not(:last-child) {
-    margin-bottom: 0;
-  }
 
 }
 
