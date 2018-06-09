@@ -5,6 +5,8 @@
         <nav class="navbar main-navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
 
+              <span class="page-title">Page Title</span>
+
               <div class="navbar-menu" v-bind:class="{ 'is-active': menuActive }">
                 <span class="navbar-start">
                   <router-link class="navbar-item" lang="en" to="/">Home</router-link>
@@ -67,11 +69,26 @@
   }
 }
 
+.page-title {
+
+  order: 1;
+  align-self: center;
+
+  @media screen and (min-width: 1088px) {
+    display: none;
+  }
+
+}
+
+
 @media screen and (max-width: 1087px) {
   .navbar-menu.is-active {
     width: 75%;
   }
+
 }
+
+
 
 nav .navbar-item.nuxt-link-exact-active {
       color: #333;

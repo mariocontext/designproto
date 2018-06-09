@@ -27,7 +27,7 @@
         </b-icon>
         <span class="app-bottom-nav-label">About</span>
       </router-link>
-      
+
     </div>
 
   </footer>
@@ -55,6 +55,10 @@
 
 .app-bottom-nav {
 
+    @media screen and (min-width: 1088px) {
+      display: none;
+    }
+
   justify-content: space-between;
 
   a {
@@ -66,12 +70,6 @@
       /* TODO: need to find a better way than using !important */
       margin-left: 0 !important;
       margin-right: 0 !important;
-    }
-  }
-
-  @media screen and (min-width: 1088px) {
-    .app-bottom-nav {
-      display: none;
     }
   }
 
