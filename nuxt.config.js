@@ -28,7 +28,7 @@ module.exports = {
   */
   modules: [
     // Simple usage
-    ['nuxt-buefy', { css: true, materialDesignIcons: true }],
+    ['nuxt-buefy', { css: true, materialDesignIcons: true }]
 ],
 
   /*

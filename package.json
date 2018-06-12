@@ -19,7 +19,8 @@
     "font-awesome": "^4.7.0",
     "hoek": "^4.2.1",
     "nuxt": "^1.0.0",
-    "nuxt-buefy": "0.0.4"
+    "nuxt-buefy": "0.0.4",
+    "nuxt-sass-resources-loader": "^2.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
