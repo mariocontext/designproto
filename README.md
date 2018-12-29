@@ -1,6 +1,7 @@
 # Designer Prototyping Tool
 
-> Nuxt.js project
+> Nuxt.js project - version 1.0.0
+
 
 ## Purpose
 
@@ -58,5 +59,3 @@ $ npm start --spa
 ```
 
 For detailed explanation on how Nuxt works, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
-version 1.0.0
